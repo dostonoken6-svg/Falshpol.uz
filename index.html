@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Falshpol UZ — 3 tilda</title>
+  <style>
+    body{font-family:Arial, sans-serif;margin:0;padding:0;background:#f5f6f8;color:#222;}
+    header{display:flex;justify-content:space-between;align-items:center;padding:16px 40px;background:#233243;color:#fff;}
+    header h1{margin:0;font-size:22px;}
+    nav a{color:#fff;text-decoration:none;margin:0 8px;font-weight:bold;}
+    nav a:hover{text-decoration:underline;}
+    main{max-width:900px;margin:40px auto;padding:20px;background:#fff;border-radius:12px;box-shadow:0 0 10px rgba(0,0,0,0.05);}
+    section{margin-bottom:30px;}
+    footer{text-align:center;color:#666;padding:20px;font-size:14px;}
+    .hidden{display:none;}
+    .hero{background:url('img/hero.svg') no-repeat center/cover;color:#fff;padding:80px 20px;border-radius:10px;text-shadow:0 1px 3px rgba(0,0,0,0.5);}
+    .hero h2{margin:0;font-size:36px;}
+    .hero p{font-size:18px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FALSHPOL UZ</h1>
+    <nav>
+      <a href="#" onclick="setLang('uz')">🇺🇿 UZ</a>
+      <a href="#" onclick="setLang('ru')">🇷🇺 RU</a>
+      <a href="#" onclick="setLang('en')">🇬🇧 EN</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="uz">
+      <div class="hero">
+        <h2>Falshpol UZ</h2>
+        <p>Zamonaviy ko‘tarma pol tizimlari va o‘rnatish xizmati</p>
+      </div>
+      <h3>Xizmatlarimiz</h3>
+      <ul>
+        <li>Falshpol o‘rnatish</li>
+        <li>Kovrolan yotqizish</li>
+        <li>Oyoqchali tizimlar montaji</li>
+      </ul>
+      <p><b>Manzil:</b> Toshkent shahar, O‘zbekiston<br>
+         <b>Telefon:</b> +998 98 777 81 21<br>
+         <b>Veb:</b> www.falshpol.uz</p>
+    </section>
+
+    <section id="ru" class="hidden">
+      <div class="hero">
+        <h2>Falshpol UZ</h2>
+        <p>Современные фальшполы и системы напольного покрытия</p>
+      </div>
+      <h3>Наши услуги</h3>
+      <ul>
+        <li>Монтаж фальшпола</li>
+        <li>Укладка ковролина</li>
+        <li>Монтаж опорных систем</li>
+      </ul>
+      <p><b>Адрес:</b> г. Ташкент, Узбекистан<br>
+         <b>Телефон:</b> +998 98 777 81 21<br>
+         <b>Сайт:</b> www.falshpol.uz</p>
+    </section>
+
+    <section id="en" class="hidden">
+      <div class="hero">
+        <h2>Falshpol UZ</h2>
+        <p>Modern raised floor systems and installation services</p>
+      </div>
+      <h3>Our Services</h3>
+      <ul>
+        <li>Raised floor installation</li>
+        <li>Carpet laying</li>
+        <li>Support pedestal systems</li>
+      </ul>
+      <p><b>Address:</b> Tashkent, Uzbekistan<br>
+         <b>Phone:</b> +998 98 777 81 21<br>
+         <b>Website:</b> www.falshpol.uz</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 FALSHPOL UZ. Barcha huquqlar himoyalangan.
+  </footer>
+
+  <script>
+    function setLang(lang){
+      document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+      document.getElementById(lang).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
